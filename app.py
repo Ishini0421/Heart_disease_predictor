@@ -18,12 +18,13 @@ st.image("heart_image.png", use_column_width=True, caption=" Heart Health Matter
 @st.cache_resource
 def load_models():
     models = {
-        "Decision Tree": pickle.load(open('heart_disease_ct.pkl', 'rb')),
-        "Random Forest": pickle.load(open('heart_disease_RF.pkl', 'rb')),
-        "Logistic Regression": pickle.load(open('heart_disease.pkl', 'rb')),
-        "Support Vector Machine": pickle.load(open('heart_disease_svm.pkl', 'rb'))
+        "Decision Tree": pickle.load(open('models/heart_disease_ct.pkl', 'rb')),
+        "Random Forest": pickle.load(open('models/heart_disease_RF.pkl', 'rb')),
+        "Logistic Regression": pickle.load(open('models/heart_disease.pkl', 'rb')),
+        "Support Vector Machine": pickle.load(open('models/heart_disease_svm.pkl', 'rb'))
     }
     return models
+
 
 models = load_models()
 
