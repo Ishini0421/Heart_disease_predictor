@@ -12,6 +12,8 @@ st.set_page_config(
     layout="wide"
 )
 
+st.image("heart_image.png", use_column_width=True, caption=" Heart Health Matters ")
+
 # ---------- CACHE MODELS ----------
 @st.cache_resource
 def load_models():
