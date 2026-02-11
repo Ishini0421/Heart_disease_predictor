@@ -152,10 +152,22 @@ with tab2:
     st.header("Bulk Prediction")
     st.info("""
 ✔ Upload CSV only  
-✔ Column names must match training data  
-✔ No missing values  
-✔ Categories must already be numeric
+✔ Column names must exactly match training data:  
+            Age, 
+            Sex, 
+            ChestPainType, 
+            RestingBP, 
+            Cholesterol, 
+            FastingBS, 
+            RestingECG, 
+            MaxHR, 
+            ExerciseAngina, 
+            Oldpeak, 
+            ST_Slope  
+✔ All values must be numeric  
+✔ No missing values
 """)
+
     upload_files = st.file_uploader("Upload CSV", type=['csv'])
 
     if upload_files is not None:
